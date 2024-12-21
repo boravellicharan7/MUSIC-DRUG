@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <title>Music Drug</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+            color: #ffffff;
+            font-family: 'Georgia', serif;
+            overflow: hidden;
+        }
+
+        div {
+            text-align: center;
+            padding: 20px;
+        }
+
+        img {
+            max-width: 250px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            letter-spacing: 0.2rem;
+            text-transform: uppercase;
+            animation: fadeIn 3s ease-in-out;
+            color: gray;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            max-width: 600px;
+            color: #e0e0e0;
+            margin: 0 auto;
+            animation: fadeIn 4s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 1200px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            p {
+                font-size: 1.1rem;
+            }
+
+            img {
+                max-width: 180px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+                max-width: 90%;
+            }
+
+            img {
+                max-width: 150px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem;
+                letter-spacing: 0.1rem;
+            }
+
+            p {
+                font-size: 0.9rem;
+                line-height: 1.4;
+            }
+
+            img {
+                max-width: 100px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="./images/logo.png" alt="Music Drug World Logo">
+        <h1>Music Drug World</h1>
+        <p>A harmonious blend of rhythm and diplomacy, where the power of music transcends boundaries and unites the
+            world.</p>
+    </div>
+    <script>
+        // Redirect after animation ends
+        setTimeout(() => {
+            window.location.href = "login.html";
+        }, 3500);
+    </script>
+</body>
+
+</html>
