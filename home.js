@@ -67,12 +67,6 @@ const songs = [
         file: "./songs/Believer(PagalNew.Com.Se).mp3"
     },
     {
-        title: "Animal OST",
-        artist: "Animal Music Cast",
-        image: "./images/animal.jpg",
-        file: "./songs/ANIMAL__Deluxe_Edition_Album____Ranbir_Kapoor,_Rashmika_M,_Bobby_D,_Tripti_D___Sandeep_V___Bhushan_K(256k).mp3"
-    },
-    {
         title: "Rage Of Narappa (Narappa)",
         artist: "Dhanunjay, Varam",
         image: "./images/rage of narappa.jpg",
