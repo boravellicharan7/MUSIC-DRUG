@@ -27,3 +27,22 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
         alert("Invalid email or password!");
     }
 });
+
+// Event listener for guest login button
+document.getElementById("guestLoginBtn").addEventListener("click", function() {
+    // Create a guest user object
+    const guestUser = {
+        name: "Guest User",
+        email: "guest@example.com",
+        isGuest: true
+    };
+    
+    // Store guest user info in session storage (temporary, clears when browser closes)
+    // Using sessionStorage instead of localStorage for guest users
+    sessionStorage.setItem("currentUser", JSON.stringify(guestUser));
+    
+    alert("Welcome, Guest User! Some features may be limited.");
+    
+    // Redirect to the main content page
+    window.location.href = "loading.html";
+});
